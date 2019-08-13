@@ -13,7 +13,7 @@ export default class New extends Component {
     handleSubmit = async e => {
         e.preventDefault()
 
-        const response = await api.post('/products', {
+        await api.post('/products', {
             title: this.state.title,
             description: this.state.description,
             url: this.state.url,

@@ -17,19 +17,43 @@
     margin-top: 5px;
 }
 
-.product-info p a {
+.product-info p {
     color: #069;
 }
 
-.product-info button {
+.product-info .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-info .actions button {
     margin-top: 5px;
     margin-left: 5px;
+    height: 40px;
     padding: 10px;
     border-radius: 5px;
     border: 0;
-    background: red;
+    background: #cc000c;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.product-info .actions a{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: 0;
+    background: #da552f;
+    margin-top: 10px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
 }
