@@ -23,7 +23,7 @@ export default class Product extends Component {
 
         const { id } = this.props.match.params
 
-        await api.delete(`/products/${id}`)
+        const response = await api.delete(`/products/${id}`)
 
         this.setState({product: response.data })
 
