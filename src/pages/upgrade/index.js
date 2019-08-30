@@ -4,18 +4,12 @@ import api from '../../services/api'
 import './styles.css'
 
 export default class Upgrade extends Component {
-    constructor(props){
-        super(props)
-        this.handleUpgrade = this.handleUpgrade.bind(this)
-        this.handleChange = this.handleChange.bind(this)
-        
-
-        this.state = {
-           title: '',
-           description: '',
-           url: '', 
-        }
+    state = {
+        title: '',
+        description: '',
+        url: '', 
     }
+
 
     async componentDidMount() {
 
